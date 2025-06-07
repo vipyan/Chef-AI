@@ -16,9 +16,9 @@
 
 ## Demo
 
+[Live Deployment](https://fabulous-salmiakki-0a69f5.netlify.app/)
+
 ![Chef AI Screenshot](images/Screenshot.png)
-
-
 
 ---
 
@@ -80,9 +80,10 @@
 
 ## How It Works
 
-* **Ingredient input** is collected from the user.
-* The app sends your ingredients to an OpenAI-powered API (via a Cloudflare Worker proxy) using a POST request.
+* **Ingredient input** is collected from the user in the main interface.
+* The app sends your ingredients to an OpenAI-powered API (via a Cloudflare Worker proxy) using a POST request (see [`ai.js`](ai.js)).
 * The AI responds with a markdown-formatted recipe, which is rendered in the app using `react-markdown`.
+* A loading spinner is shown while the recipe is being generated.
 
 ---
 
@@ -118,4 +119,3 @@ MIT
 *Questions, suggestions, or want to contribute? Open an issue or submit a pull request!*
 
 ---
-
