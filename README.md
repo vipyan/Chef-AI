@@ -61,14 +61,14 @@
 ├── components/
 │   ├── ClaudeRecipe.jsx         # Renders the AI-generated recipe using markdown
 │   ├── IngredientsList.jsx      # Displays the list of ingredients and recipe button
-│   └── LoadingSvg.jsx           # Loading spinner component
+│   ├──Header.jsx                   # App header (logo/title)
+│   ├──LoadingSvg.jsx           # Loading spinner component
+│   └──Main.jsx                     # Main app logic (ingredients, recipe display)
 ├── images/
 │   ├── chef-claude-icon.png     # App logo / screenshot
 │   └── loader.svg               # Loader image
 ├── ai.js                        # AI logic (calls OpenAI API via proxy)
 ├── App.jsx                      # App root
-├── Header.jsx                   # App header (logo/title)
-├── Main.jsx                     # Main app logic (ingredients, recipe display)
 ├── index.jsx                    # Entry point
 ├── index.html                   # HTML template
 ├── index.css                    # Global styles
